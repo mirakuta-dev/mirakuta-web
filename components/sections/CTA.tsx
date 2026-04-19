@@ -10,10 +10,10 @@ export function CTA() {
 
   return (
     <section className="bg-brand-dark px-6 md:px-12 lg:px-24 py-20 md:py-24 text-center">
-      <h2 className="text-3xl md:text-4xl font-medium tracking-tight text-white">
+      <h2 className="text-3xl md:text-4xl font-medium tracking-tight text-white text-balance">
         {t.cta.headline}
       </h2>
-      <p className="mt-3 text-brand-textDark">{t.cta.subline}</p>
+      <p className="mt-3 text-brand-textDark text-balance">{t.cta.subline}</p>
       <div className="mt-8 flex justify-center">
         <Button href={GITHUB_URL} external>
           {t.cta.primary}

@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import { useLocale } from "@/components/LocaleProvider";
 
 export function Problem() {
@@ -7,18 +8,25 @@ export function Problem() {
 
   return (
     <section className="px-6 md:px-12 lg:px-24 py-16 md:py-24">
-      <h2 className="text-2xl md:text-3xl font-medium tracking-tight text-brand-neutral dark:text-white max-w-3xl">
+      <h2 className="text-2xl md:text-3xl font-medium tracking-tight text-brand-neutral dark:text-white max-w-3xl mx-auto text-center text-balance">
         {t.problem.heading}
       </h2>
 
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
         {t.problem.quotes.map((quote, idx) => (
           <blockquote
             key={idx}
-            className="border border-brand-border dark:border-white/10 rounded-lg p-5 text-brand-neutral dark:text-gray-200"
+            className="border border-brand-border dark:border-white/10 rounded-lg p-6 text-brand-neutral dark:text-gray-200 text-center flex items-center justify-center"
           >
-            <p className="before:content-['\201C'] after:content-['\201D'] before:mr-0.5 after:ml-0.5">
-              {quote}
+            <p>
+              &ldquo;
+              {quote.map((sentence, sIdx) => (
+                <Fragment key={sIdx}>
+                  {sIdx > 0 && <br />}
+                  {sentence}
+                </Fragment>
+              ))}
+              &rdquo;
             </p>
           </blockquote>
         ))}

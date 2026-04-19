@@ -18,10 +18,6 @@ export default function AboutPage() {
           {t.about.title}
         </h1>
 
-        <p className="mt-6 text-lg text-brand-neutral dark:text-gray-200 leading-relaxed">
-          {t.about.intro}
-        </p>
-
         <section className="mt-12">
           <h2 className="text-sm font-mono uppercase tracking-wider text-brand-muted mb-3">
             {t.about.stackHeading}

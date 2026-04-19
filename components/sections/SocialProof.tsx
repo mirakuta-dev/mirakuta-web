@@ -9,10 +9,10 @@ export function SocialProof() {
 
   return (
     <section className="px-6 md:px-12 lg:px-24 py-16 md:py-24 text-center">
-      <h2 className="text-2xl md:text-3xl font-medium tracking-tight text-brand-neutral dark:text-white">
+      <h2 className="text-2xl md:text-3xl font-medium tracking-tight text-brand-neutral dark:text-white text-balance">
         {t.socialProof.heading}
       </h2>
-      <p className="mt-3 text-brand-muted dark:text-gray-400">
+      <p className="mt-3 text-brand-muted dark:text-gray-400 text-balance">
         {t.socialProof.body}
       </p>
       <a
