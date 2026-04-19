@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import { useLocale } from "@/components/LocaleProvider";
 import { Button } from "@/components/ui/Button";
 
@@ -14,8 +15,13 @@ export function Hero() {
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-white leading-tight text-balance">
           {t.hero.headline}
         </h1>
-        <p className="mt-5 text-lg text-brand-textDark max-w-2xl mx-auto text-balance">
-          {t.hero.subline}
+        <p className="mt-5 text-lg text-brand-textDark max-w-2xl mx-auto">
+          {t.hero.subline.map((line, i) => (
+            <Fragment key={i}>
+              {i > 0 && <br />}
+              {line}
+            </Fragment>
+          ))}
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
           <Button href={GITHUB_URL} external>

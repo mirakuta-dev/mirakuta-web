@@ -8,8 +8,13 @@ export function Problem() {
 
   return (
     <section className="px-6 md:px-12 lg:px-24 py-16 md:py-24">
-      <h2 className="text-2xl md:text-3xl font-medium tracking-tight text-brand-neutral dark:text-white max-w-3xl mx-auto text-center text-balance">
-        {t.problem.heading}
+      <h2 className="text-2xl md:text-3xl font-medium tracking-tight text-brand-neutral dark:text-white max-w-3xl mx-auto text-center">
+        {t.problem.heading.map((line, i) => (
+          <Fragment key={i}>
+            {i > 0 && <br />}
+            {line}
+          </Fragment>
+        ))}
       </h2>
 
       <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
