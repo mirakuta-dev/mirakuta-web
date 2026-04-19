@@ -16,13 +16,15 @@ export const translations = {
     },
     hero: {
       headline: "Windows dev setup, done right.",
-      subline: "One command. Everything you need. Nothing you don't.",
+      subline: ["One command.", "Everything you need.", "Nothing you don't."],
       primary: "View on GitHub →",
       secondary: "See what it does",
     },
     problem: {
-      heading:
-        "Setting up a Windows dev environment shouldn't take an afternoon.",
+      heading: [
+        "Setting up a Windows dev environment",
+        "shouldn't take an afternoon.",
+      ],
       quotes: [
         ["Which PowerShell version?", "Do I need WSL?", "What's winget?"],
         [
@@ -104,12 +106,15 @@ export const translations = {
     },
     hero: {
       headline: "윈도우 개발 환경, 제대로 한 번에.",
-      subline: "명령어 하나로 끝. 필요한 건 전부, 군더더기는 하나도.",
+      subline: ["명령어 하나로 끝.", "필요한 건 전부,", "군더더기는 하나도."],
       primary: "GitHub에서 보기 →",
       secondary: "어떻게 작동하는지 보기",
     },
     problem: {
-      heading: "윈도우 개발 환경 세팅, 반나절씩 걸릴 일이 아니잖아요.",
+      heading: [
+        "윈도우 개발 환경 세팅,",
+        "반나절씩 걸릴 일이 아니잖아요.",
+      ],
       quotes: [
         ["파워셸은 어떤 버전?", "WSL은 꼭 필요해?", "winget은 또 뭐고?"],
         [
