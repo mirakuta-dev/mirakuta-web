@@ -24,7 +24,6 @@ export const metadata: Metadata = {
     description: "Modern dev environment for Windows, one line away.",
     url: "https://mirakuta.dev",
     siteName: "mirakuta",
-    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     locale: "en_US",
     type: "website",
   },
@@ -32,7 +31,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "mirakuta",
     description: "Modern dev environment for Windows, one line away.",
-    images: ["/og-image.png"],
   },
 };
 
