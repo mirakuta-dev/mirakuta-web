@@ -24,9 +24,12 @@ export const translations = {
       heading:
         "Setting up a Windows dev environment shouldn't take an afternoon.",
       quotes: [
-        "Which PowerShell version? Do I need WSL? What's winget?",
-        "Spent 3 hours on fonts alone. Still not sure if it's right.",
-        "My Mac just works. Why is Windows like this.",
+        ["Which PowerShell version?", "Do I need WSL?", "What's winget?"],
+        [
+          "Spent 3 hours on fonts alone.",
+          "Still not sure if it's right.",
+        ],
+        ["My Mac just works.", "Why is Windows like this."],
       ],
     },
     solution: {
@@ -79,8 +82,6 @@ export const translations = {
     },
     about: {
       title: "About",
-      intro:
-        "Hi, I'm Mark. I build developer tools from Seoul. mirakuta is my attempt at making Windows a first-class dev environment.",
       stackHeading: "Stack",
       builtHeading: "Built with mirakuta",
       contactHeading: "Contact",
@@ -103,20 +104,23 @@ export const translations = {
     },
     hero: {
       headline: "윈도우 개발 환경, 제대로 한 번에.",
-      subline: "명령어 하나. 필요한 건 전부. 필요 없는 건 하나도.",
+      subline: "명령어 하나로 끝. 필요한 건 전부, 군더더기는 하나도.",
       primary: "GitHub에서 보기 →",
-      secondary: "어떻게 동작하는지 보기",
+      secondary: "어떻게 작동하는지 보기",
     },
     problem: {
-      heading: "윈도우 개발 환경 세팅에 반나절을 쓸 필요는 없습니다.",
+      heading: "윈도우 개발 환경 세팅, 반나절씩 걸릴 일이 아니잖아요.",
       quotes: [
-        "파워셸 어느 버전? WSL 필요한가? winget은 뭐지?",
-        "폰트만 세 시간 걸렸어요. 제대로 된 건지도 모르겠어요.",
-        "맥은 그냥 되던데. 윈도우는 왜 이래요.",
+        ["파워셸은 어떤 버전?", "WSL은 꼭 필요해?", "winget은 또 뭐고?"],
+        [
+          "폰트 설정만 세 시간째.",
+          "이게 맞는 건지도 모르겠어.",
+        ],
+        ["맥은 그냥 되던데.", "윈도우는 왜 이래."],
       ],
     },
     solution: {
-      heading: "모든 게 정리됐습니다. 명령어 하나로.",
+      heading: "모든 게 정리됩니다. 명령어 하나로.",
       cards: [
         {
           title: "Go, Git, Node — 설치 완료",
@@ -124,26 +128,26 @@ export const translations = {
         },
         {
           title: "WSL + 우분투 — 준비 완료",
-          body: "윈도우 위의 리눅스, 제대로 설정된 상태로.",
+          body: "윈도우에서 쓰는 리눅스, 제대로 설정된 상태로.",
         },
         {
           title: "폰트 + 터미널 — 설정 완료",
           body: "JetBrains Mono. 보기 좋고, 잘 작동합니다.",
         },
         {
-          title: "프리셋 — 스택 선택",
+          title: "프리셋 — 원하는 스택 선택",
           body: "미니멀, 풀스택, 데이터 사이언스. 원하는 대로.",
         },
       ],
     },
     socialProof: {
-      heading: "아직 초기입니다. 열린 공간에서 만들어가는 중.",
-      body: "레포를 스타하고 소식을 받아보세요.",
+      heading: "이제 막 시작했습니다. 오픈소스로 만들어가는 중.",
+      body: "스타 한 번 눌러두면 소식을 챙겨볼 수 있어요.",
       cta: "GitHub에서 스타하기 →",
     },
     cta: {
       headline: "이제 세팅은 그만하고 싶다면.",
-      subline: "뭔가를 만들어봅시다.",
+      subline: "만들고 싶은 것을 만드세요.",
       primary: "GitHub에서 보기 →",
     },
     footer: {
@@ -165,8 +169,6 @@ export const translations = {
     },
     about: {
       title: "소개",
-      intro:
-        "안녕하세요, Mark입니다. 서울에서 개발자 도구를 만듭니다. mirakuta는 윈도우를 일급 개발 환경으로 만들어보려는 시도입니다.",
       stackHeading: "기술 스택",
       builtHeading: "mirakuta로 만든 것",
       contactHeading: "연락",
