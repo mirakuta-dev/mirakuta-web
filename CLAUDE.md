@@ -19,19 +19,22 @@
 ## Brand Identity
 
 ### Colors
-Register all colors in `tailwind.config.ts` under `theme.extend.colors.brand`:
+Register brand colors in `app/globals.css` using Tailwind v4 `@theme` directive.
+Classes like `bg-brand-primary`, `text-brand-dark`, `border-brand-border` work out of the box.
 
-```typescript
-brand: {
-  primary:   '#4338CA', // Indigo 600 — main CTA, buttons, links
-  dark:      '#1E1B4B', // Indigo 900 — dark bg, hero section
-  mid:       '#818CF8', // Indigo 400 — symbol on dark bg, accents
-  light:     '#E0E7FF', // Indigo 100 — symbol inner, light accents
-  textDark:  '#C7D2FE', // wordmark on dark backgrounds
-  neutral:   '#1F2937', // Gray 800 — body text
-  muted:     '#6B7280', // Gray 500 — secondary text
-  border:    '#E5E7EB', // Gray 200 — borders
-  surface:   '#F9FAFB', // Gray 50 — background surfaces
+```css
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary:   #4338CA; /* Indigo 600 — main CTA, buttons, links */
+  --color-brand-dark:      #1E1B4B; /* Indigo 900 — dark bg, hero section */
+  --color-brand-mid:       #818CF8; /* Indigo 400 — symbol on dark bg, accents */
+  --color-brand-light:     #E0E7FF; /* Indigo 100 — symbol inner, light accents */
+  --color-brand-textDark:  #C7D2FE; /* wordmark on dark backgrounds */
+  --color-brand-neutral:   #1F2937; /* Gray 800 — body text */
+  --color-brand-muted:     #6B7280; /* Gray 500 — secondary text */
+  --color-brand-border:    #E5E7EB; /* Gray 200 — borders */
+  --color-brand-surface:   #F9FAFB; /* Gray 50 — background surfaces */
 }
 ```
 
@@ -124,10 +127,11 @@ website/
 │   └── products.ts         # Product data (name, desc, status, tags, url)
 ├── public/
 │   └── og-image.png        # Open Graph image
-├── tailwind.config.ts
 ├── next.config.ts
 └── CLAUDE.md               # This file
 ```
+
+> Tailwind v4 (CSS-based config) — no `tailwind.config.ts`; brand tokens live in `app/globals.css`.
 
 ---
 
@@ -286,21 +290,11 @@ export const metadata: Metadata = {
 
 ---
 
-## Local Development Paths
-- Website repo: D:\Projects\mirakuta-web
-- CLI repo:     D:\Projects\mirakuta
-- GitHub org:   github.com/mirakuta-dev
+## Related
+- Shared org-level config: `D:\Projects\mirakuta-dev\CLAUDE.md`
+- CLI repo: `mirakuta` (see parent CLAUDE.md for details)
 
-## Related Repositories
-- mirakuta CLI: github.com/mirakuta-dev/mirakuta
-  Local path: D:\Projects\mirakuta
-  Stack: Go, Cobra, Viper
-  Purpose: Windows dev environment CLI tool
-
-## Collaboration Rules
-Commit process and prohibited actions are defined in the global CLAUDE.md
-(`~/.claude/CLAUDE.md`). All rules there apply to this repo as well.
-
-### Branch strategy
+## Branch Strategy
 - Work on `feature/website-init` branched from `dev`
 - Merge to `dev` after human review
+- Commit process and prohibited actions defined in global `~/.claude/CLAUDE.md`
